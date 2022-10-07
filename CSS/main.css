@@ -1,0 +1,317 @@
+* {
+  --gle-font-family:Raleway,Arial,Helvetica,sans-serif !important ;
+}
+
+.headerPara {
+  font-size: 14px;
+  color: rgb(124, 118, 118);
+  z-index: 1;
+}
+
+.nav {
+  z-index: 1;
+}
+
+.textPosition {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.shopLinks a {
+  background-color: #222;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 15px 70px;
+}
+.shopLinks a:hover {
+  background-color: white;
+  color: black;
+  transition: all ease 100ms;
+  border: 2px solid #222;
+}
+
+.shoeDisplayHover img {
+  width: 400px;
+  height: 300px;
+}
+.shoeDisplayHover img:hover {
+  transition: all 700ms;
+  transform: scale(1.1);
+}
+.shoeDisplayHover .col:hover {
+  padding: 10px;
+  box-shadow: 5px 5px 10px 5px rgba(33, 33, 33, 0.2);
+}
+
+.ontopImgVid {
+  z-index: 1;
+  top: 30%;
+  left: 35%;
+}
+
+.ontopImg {
+  right: 0;
+  width: 47%;
+}
+
+.divider {
+  width: 2%;
+  height: 2%;
+  position: absolute;
+  left: 47%;
+}
+
+.belowImg {
+  right: 0;
+  width: 47%;
+}
+
+.woolBenefits {
+  line-height: 1;
+  color: #212121;
+}
+.woolBenefits span {
+  height: 90px;
+  font-weight: 600;
+}
+.woolBenefits .benefit {
+  border-right: 1px solid #000000;
+  font-weight: 500;
+}
+
+.brandGrid p {
+  top: 80%;
+  left: 6%;
+}
+
+.hoverSpan:hover, .hoverSpan span {
+  margin-left: 4px;
+  transition: all 0.5s;
+}
+
+#testimonial1,
+#testimonial2,
+#testimonial3 {
+  transform: translate3d(-1000px);
+  transition: all 5s ease 1s;
+}
+
+#testimonial2, #testimonial3 {
+  display: none;
+}
+
+.logo {
+  top: 50%;
+  z-index: 1;
+  background-color: whitesmoke;
+  padding: 34px;
+  border-radius: 50%;
+  left: 46%;
+}
+
+footer {
+  background-color: rgb(5, 5, 5);
+}
+footer i a {
+  filter: invert(1);
+}
+footer i a:hover {
+  filter: invert(0);
+}
+footer input {
+  background-color: rgb(5, 5, 5);
+  font-size: 12px;
+  border: 1px solid white;
+}
+footer ul p {
+  font-size: 11px;
+  color: whitesmoke;
+}
+footer ul img {
+  filter: invert(1);
+}
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: left;
+  font-size: 13px;
+}
+footer a:hover {
+  color: rgb(141, 135, 135);
+}
+footer form a {
+  font-size: 10px;
+  padding: 20px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+footer .copy {
+  font-size: 12px;
+  color: rgb(129, 122, 122);
+}
+
+header {
+  display: none;
+  z-index: 2;
+}
+header a {
+  text-decoration: none;
+  color: rgb(75, 71, 71);
+}
+header a:hover {
+  color: #222;
+  transition: all 100ms;
+}
+header .sunImg {
+  width: 10px;
+  height: 10px;
+}
+header img {
+  height: 100px;
+  width: 100px;
+}
+header img:hover {
+  transition: all 300ms;
+  transform: scale(1.1);
+}
+header .navImg {
+  width: 220px;
+}
+header .navImg p {
+  width: 200px;
+  top: 40%;
+}
+header .navImg img {
+  height: 220px;
+  width: 200px;
+}
+
+.mensslipperNav {
+  padding: 10px;
+  font-size: 14px;
+}
+.mensslipperNav ul {
+  display: none;
+  z-index: 1;
+  position: fixed;
+}
+.mensslipperNav span {
+  font-size: 14px;
+}
+.mensslipperNav span::after {
+  content: "V";
+  float: right;
+  font: 5px;
+}
+.mensslipperNav span:hover::after {
+  transform: rotate(180deg);
+  cursor: pointer;
+  color: #212121;
+}
+
+.dropdownNavAbout a:hover {
+  color: #000000;
+  padding: 2px;
+}
+
+.cartView a {
+  font-size: 14px;
+  font-weight: 600px;
+  color: #212121;
+  text-decoration: none;
+}
+.cartView a:hover {
+  text-decoration: underline;
+}
+.cartView p {
+  color: rgb(117, 109, 109);
+  font-size: 10px;
+}
+.cartView span {
+  font-size: 12px;
+}
+.cartView .checkout {
+  background-color: #f34c3f;
+  padding: 10px 40%;
+}
+.cartView .checkout:hover {
+  color: #dd3a2d;
+}
+
+.productView p {
+  font-size: 10px;
+  color: rgb(117, 109, 109);
+}
+
+.sizes {
+  color: #212121;
+}
+.sizes p {
+  border: 1px solid whitesmoke;
+  padding: 10px 20px 10px 20px;
+  margin: 10px auto;
+  text-align: center;
+}
+.sizes p:focus, .sizes p :hover {
+  cursor: pointer;
+}
+
+video {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.product-video-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  mix-blend-mode: multiply;
+  background: url(https://cdn.mahabis.com/website/icons/icon-loader-2.gif?263050) center 42% no-repeat;
+  background-size: 60px;
+}
+
+.addToCart {
+  background-color: #212121;
+  width: 100%;
+  font-size: 12px;
+  padding: 15px 40%;
+}
+
+.productViewNav a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(131, 129, 129);
+}
+
+.banner .signUp {
+  width: 40%;
+  margin: auto;
+}
+.banner .signUp button {
+  border: none;
+  background-color: #212121;
+  font-size: 12px;
+  padding: 10px 20%;
+}
+.banner .signUp button:hover {
+  transition: all ease 500ms;
+  background-color: #443d3d;
+}
+
+.triangle {
+  transition: all 0.5s;
+}
+
+.triangle-up {
+  transform: rotateX(180deg);
+  margin-top: -50px;
+}
+
+.playVid {
+  z-index: 2;
+  margin-top: 50px;
+}/*# sourceMappingURL=main.css.map */
