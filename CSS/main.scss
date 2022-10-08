@@ -1,10 +1,11 @@
-*{--gle-font-family:Raleway,Arial,Helvetica,sans-serif !important }
+*{--gle-font-family:Raleway,Arial,Helvetica,sans-serif !important; scroll-behavior: smooth; }
 .headerPara{font-size: 14px; color: rgb(124, 118, 118);z-index: 1;}
 .nav{z-index: 1; }
 .textPosition{position: absolute;
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);}
+    
 .shopLinks{
     a{
         background-color:#222;
@@ -37,14 +38,60 @@ color: whitesmoke;
     }
 
 }
-.ontopImgVid{z-index: 1; top:30% ; left: 35%;}
-.ontopImg{ right:0;
-    width: 47%; }
-.divider{width: 2%; height: 2%;
-    position:absolute;
-    left: 47%;} 
-    .belowImg{ right:0;
-        width: 47%;}
+
+// .switch{a{
+//     text-decoration: none;
+//     color: #212121;
+    
+// }}
+.topnav {
+    overflow: hidden;
+   
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+ 
+
+  .topnav a.active {
+    border-bottom: 3px solid black;
+  }
+
+  .testimonialActive {
+    border-bottom: 3px solid black;
+  }
+  .gqtestimonialActive{ border-bottom: 3px solid black; }
+
+
+.bestSeller{top: 18%; font-size: 13px;}
+.line{height: 3px; width: 90px; background-color: #000000;}
+
+// @media (max-width:728px) {
+//     .carousel-item{
+//         img{height: 100px;}
+//     }
+// }
+// .carousel-item{
+//     img{height: 1000px;}
+// }
+
+// .ontopImgVid{z-index: 1; top:30% ; left: 35%;}
+// .ontopImg{ right:0;
+//     width: 47%; }
+// .divider{width: 2%; height: 2%;
+//     position:absolute;
+//     left: 47%;} 
+//     .belowImg{ right:0;
+//         width: 47%;}
         
 .woolBenefits{
 
@@ -233,3 +280,18 @@ font-size: 12px; color: rgb(131, 129, 129);
       }
 
       .playVid{z-index: 2;  margin-top: 50px;}
+      .modernLiving{ line-height: 1;
+    p{color: rgb(163, 157, 157);}
+    img{width: 80%; height: 85%;}
+    a{text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }}
+    }
+    .modernLivingMen{ height: 300px;line-height: 1;
+        p{color: rgb(163, 157, 157);}
+        img{width: 60%; height: 65%; }
+        a{text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }}}

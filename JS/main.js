@@ -1,21 +1,48 @@
 
+$("#navTestimonial1").show();
+$("#navTestimonial1").addClass("testimonialActive");
+
+$("#navTestimonial1").on("click",function () { 
+    $("#navTestimonial1").addClass("testimonialActive");
+    $("#navTestimonial2").removeClass("gqtestimonialActive");
+    $("#navTestimonial2").removeClass("testimonialActive");
+    $("#testimonial2").hide("slide", { direction: "left" }, 500);
+    $("#testimonial1").show("slide", { direction: "right" }, 500);
+ 
 
 
-$("#navTestimonial1").click(function () { 
-   $("#testimonial1").show()
-   $("#testimonial2").hide()
-   $("#testimonial2").hide()
+
+
+   $
+//    $("#testimonial2").hide()
+//    $("#testimonial2").hide()
 });
-$("#navTestimonial2").click(function () { 
-    $("#testimonial1").hide()
-    $("#testimonial2").show()
-    $("#testimonial3").hide()
- });
 
- $("#navTestimonial3").click(function () { 
-    $("#testimonial1").hide()
-    $("#testimonial2").hide()
-    $("#testimonial3").show()
+  
+
+    $("#navTestimonial2").on('click', function() {
+        $("#navTestimonial2").addClass("gqtestimonialActive");
+        $("#navTestimonial1").removeClass("testimonialActive")
+        $("#navTestimonial3").removeClass("testimonialActive");
+        $("#testimonial1").hide("slide", { direction: "left" }, 500);
+        $("#testimonial3").hide("slide", { direction: "left" }, 500);
+        $("#testimonial12").show("slide", { direction: "left" }, 500);
+    });
+  
+
+
+  
+
+
+
+
+ $("#navTestimonial3").on('click',function () { 
+    $("#navTestimonial3").addClass("testimonialActive");
+    $("#navTestimonial1").removeClass("testimonialActive");
+    $("#navTestimonial2").removeClass("gqtestimonialActive");
+    $("#testimonial2").hide("slide", { direction: "left" }, 500);
+    $("#testimonial1").hide("slide", { direction: "left" }, 500);
+        $("#testimonial13").show("slide", { direction: "right" }, 500);
  });
 
 $("#menNav").click(function () {
@@ -49,31 +76,61 @@ $("#helpNav").click(function () {
     
 })
 
-
-
-
-
 $(function () {
-    var ontopImg = parseInt($("#ontopImg").width());
-    var belowImg = parseInt($("#belowImg").width());
+    var p1 = parseInt($("#part1").width());
+    var p2 = parseInt($("#part2").width());
+
+    $(".divider").draggable({
+        axis: "x",
+        containment: "parent",
+        scroll: false,
+        drag: function () {
+            var a = parseInt($(this).position().left);
+            $("#part1").css({width:a});
+            $("#part2").css({width:p1 + p2 -a });
+        }
+    });
+});
+
+
+    
+$("#bestSellerTag").click(function () { 
+    $("#bestSellerTag").addClass("active");
+    $("#newInTag").removeClass("active");
+    $("#seasonalPickTag").removeClass("active");
+   $("#bestSellerProducts").show();
+   $("#seasonalPickProducts").hide()
+   $("#newInProducts").hide()
+   $("#bestSellerLine").hide();
+   $("#newInLine").hide();
+});
+
+$("#seasonalPickTag").click(function () { 
+    $("#seasonalPickTag").addClass("active");
+    $("#newInTag").removeClass("active");
+    $("#bestSellerTag").removeClass("active");
+
+    $("#seasonalPickProducts").show()
+    $("#bestSellerProducts").hide()
+    $("#newInProducts").hide()
+    $("#bestSellerLine").hide();
+    $("#newInLine").hide();
+ });
+
+ $("#newInTag").click(function () { 
+   $("#newInTag").addClass("active");
+   $("#seasonalPickTag").removeClass("active");
+   $("#bestSellerTag").removeClass("active");
+    $("#newInProducts").show()
+    $("#seasonalPickProducts").hide()
+    $("#bestSellerProducts").hide()
+    $("#seasonalPickLine").hide();
+    $("#bestSellerLine").hide();
+ });
 
  
-
-  $(".divider").draggable({
-    axis:"x",
-    containment:"parent",
-    scroll:false,
-    drag:function () {
-        
-    
-    let a = parseInt($(this).position().left);
-    $("#ontopImg").css({width:a});
-    $("#belowImg").css({width:ontopImg + belowImg -a });
-    }
-    });
-    
-})
+ 
 
 
 
-  
+ 

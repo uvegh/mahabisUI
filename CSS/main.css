@@ -1,5 +1,6 @@
 * {
-  --gle-font-family:Raleway,Arial,Helvetica,sans-serif !important ;
+  --gle-font-family:Raleway,Arial,Helvetica,sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 .headerPara {
@@ -45,27 +46,42 @@
   box-shadow: 5px 5px 10px 5px rgba(33, 33, 33, 0.2);
 }
 
-.ontopImgVid {
-  z-index: 1;
-  top: 30%;
-  left: 35%;
+.topnav {
+  overflow: hidden;
 }
 
-.ontopImg {
-  right: 0;
-  width: 47%;
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
 }
 
-.divider {
-  width: 2%;
-  height: 2%;
-  position: absolute;
-  left: 47%;
+.topnav a.active {
+  border-bottom: 3px solid black;
 }
 
-.belowImg {
-  right: 0;
-  width: 47%;
+.testimonialActive {
+  border-bottom: 3px solid black;
+}
+
+.gqtestimonialActive {
+  border-bottom: 3px solid black;
+}
+
+.bestSeller {
+  top: 18%;
+  font-size: 13px;
+}
+
+.line {
+  height: 3px;
+  width: 90px;
+  background-color: #000000;
 }
 
 .woolBenefits {
@@ -314,4 +330,39 @@ video {
 .playVid {
   z-index: 2;
   margin-top: 50px;
+}
+
+.modernLiving {
+  line-height: 1;
+}
+.modernLiving p {
+  color: rgb(163, 157, 157);
+}
+.modernLiving img {
+  width: 80%;
+  height: 85%;
+}
+.modernLiving a {
+  text-decoration: none;
+}
+.modernLiving a:hover {
+  text-decoration: underline;
+}
+
+.modernLivingMen {
+  height: 300px;
+  line-height: 1;
+}
+.modernLivingMen p {
+  color: rgb(163, 157, 157);
+}
+.modernLivingMen img {
+  width: 60%;
+  height: 65%;
+}
+.modernLivingMen a {
+  text-decoration: none;
+}
+.modernLivingMen a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

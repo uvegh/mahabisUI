@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link
+        href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css"
+        rel="stylesheet"
+      />
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
 
@@ -18,7 +22,7 @@
     <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
         <div class="container-fluid p-1 m-auto me-5 ms-5">
             <div class="">
-                <a class="navbar-brand" href="#"> <svg class="icon-logo" width="30px" height="30px" viewBox="0 0 42 30"
+                <a class="navbar-brand" href="index.html"> <svg class="icon-logo" width="30px" height="30px" viewBox="0 0 42 30"
                         version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>mahabis slippers – footwear for time well spent logo</title>
                         <defs></defs>
@@ -66,7 +70,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./indexImgs/icon-myaccount.png" alt=""
+                            <a class="nav-link" href="signUp.html"><img src="./indexImgs/icon-myaccount.png" alt=""
                                     width="25"></a>
                         </li>
 
@@ -75,7 +79,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="./indexImgs/icon-cart2.png " alt="" width=" 25"></a>
+                            <a class="nav-link" href="cart.html"><img src="./indexImgs/icon-cart2.png " alt="" width=" 25"><sup class="bg-danger p-1 rounded-circle text-white" id="cartItemNo">0</sup></a>
                         </li>
                     </ul>
                 </div>
@@ -578,6 +582,7 @@
 
 
     </div>
+    
     <div class="banner">
         <div class="container-fluid">
             <div class="bg-light p-1 headerPara mt-5 pt-4 fixed-top ">
@@ -590,7 +595,7 @@
                 <div class="carousel-item active">
                     <a href="">
                         <div class="desktopbg position-relative  ">
-                            <img src="indexImgs/homepage-desktop-01-Sep.jpg" alt="" class="img-fluid ">
+                            <img src="indexImgs/homepage-desktop-01-Sep.jpg" alt="" class="img-fluid">
                             <div class="position-absolute textPosition">
                                 <h2 class=" text-white fs-1">Slipper season is upon us. <br>
                                     <span class="fs-5"> GET COMFORTABLE </span>
@@ -602,11 +607,10 @@
 
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                 
                     <a href="">
                         <div class="desktopbg position-relative  ">
-                            <img src="indexImgs/4_2_c6ffe03c-e9ce-4f87-9145-be4834f7ad15_1024x.jpg" alt=""
-                                class="img-fluid ">
+                            <img src="indexImgs/homepage-article-2.jpg "alt="" class="img-fluid ">
                             <div class="position-absolute textPosition">
                                 <h2 class=" text-white fs-1">Slipper season is upon us. <br>
                                     <span class="fs-5"> GET COMFORTABLE </span>
@@ -616,10 +620,12 @@
                         </div>
                     </a>
                 </div>
+                
                 <div class="carousel-item">
+                 
                     <a href="">
                         <div class="desktopbg position-relative  ">
-                            <img src="indexImgs/greyYellow.png" alt="" class="img-fluid ">
+                            <img src="indexImgs/homepage_desktop_banner_19.webp "alt="" class="img-fluid ">
                             <div class="position-absolute textPosition">
                                 <h2 class=" text-white fs-1">Slipper season is upon us. <br>
                                     <span class="fs-5"> GET COMFORTABLE </span>
@@ -636,8 +642,8 @@
 
         <div
             class="shopLinks text-center container d-lg-flex d-md-block d-sm-block justify-content-evenly pt-0  mt-4  container">
-            <div> <a href="" class="">SHOP MEN</a></div>
-            <div> <a href="">SHOP WOMEN</a></div>
+            <div> <a href="shopMen.html" class="">SHOP MEN</a></div>
+            <div> <a href="shopMen.html">SHOP WOMEN</a></div>
 
 
 
@@ -646,14 +652,39 @@
         <p class="text-center fs-2">innovative comfort that takes you everywhere</p>
     </div>
 
-    <div class="row row-cols-lg-3 shoeDisplayHover container-fluid m-auto row-cols-md-1 row-cols-sm-1  ">
+
+<div class="container-fluid d-flex  justify-content-center fw-lighter mt-5  " >
+   <!-- <button  type="button" class="bestSellerTag border-0 bg-white"> BEST SELLERS </button>
+   <button  type="button"class="seasonalPicks ms-3 me-3 border-0 bg-white" >SEASONAL PICKS</a> 
+    <button  type="button" class="newIn border-0 bg-white" >NEW IN </a> -->
+
+
+        <div class="topnav border-bottom">
+            <a href="#bestSellerTag"  class="active" id="bestSellerTag">BEST SELLERS</a>
+            <a href="# seasonalPickTag" id="seasonalPickTag">SEASONAL PICK</a>
+            <a href="#newInTag" id="newInTag">NEW IN </a>
+          </div>
+          
+          
+</div>
+
+<!-- <div class="container-fluid d-flex  justify-content-center fw-lighter mt-1 switch " >
+  <div class="line" id="bestSellerLine"></div>
+  <div class="line ms-3 me-3" id="seasonalPickLine"></div>
+  <div class="line" id="newInLine"></div>
+ </div> -->
+ 
+ 
+ 
+ 
+    <div class="row row-cols-lg-3 shoeDisplayHover mt-5 container-fluid m-auto row-cols-md-1 row-cols-sm-1"id="bestSellerProducts">
 
         <div class="col m-auto  ">
 
-            <div class="imgholder bg-light overflow-hidden">
+            <div class="imgholder bg-light overflow-hidden position-relative">
 
-                <img src="./indexImgs/MC-F-DG-SB-2_preview_rev_1.png" alt="" srcset="" class="img-fluid">
-
+                <img src="./indexImgs/MC-F-DG-SB-2_preview_rev_1.png" alt="" srcset="" class="img-fluid  ">
+<p class="fw-lighter position-absolute bg-white rounded-end ps-2 bestSeller">best seller</p>
             </div>
             <div>
                 <b>mahabis curve</b>
@@ -696,16 +727,119 @@
 
         </div>
     </div>
+    
+    <div class="row row-cols-lg-3 shoeDisplayHover container-fluid m-auto row-cols-md-1 row-cols-sm-1"id="seasonalPickProducts">
+
+        <div class="col m-auto  ">
+
+            <div class="imgholder bg-light overflow-hidden position-relative">
+
+                <img src="./indexImgs/MC-F-DG-SB-2_preview_rev_1.png" alt="" srcset="" class="img-fluid  ">
+<p class="fw-lighter position-absolute bg-white rounded-end ps-2 bestSeller">Seasonal Pick</p>
+            </div>
+            <div>
+                <b>mahabis curve</b>
+                <p>lavirk ligth grey & sakura pink</p>
+            </div>
+
+        </div>
+        <div class="col m-auto">
+
+            <div class="imgholder bg-light overflow-hidden">
+
+
+                <img src="./indexImgs/blackGreyshoe.png" alt="" srcset="">
+
+            </div>
+            <div>
+                <b> mahabis classic</b>
+                <p class="fw-lighter">Larvik dark grey & Skien black</p>
+                <p> ₦‌39,600</p>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="col m-auto">
+
+            <div class="imgholder bg-light">
+
+
+                <img src="./indexImgs/greyYellow.png" alt="" srcset="">
+            </div>
+            <div>
+                <b> mahabis classic</b>
+                <p class="fw-lighter">Larvik dark grey & Skien black</p>
+                <p> ₦‌39,600</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="row row-cols-lg-3 shoeDisplayHover container-fluid m-auto row-cols-md-1 row-cols-sm-1"id="newInProducts">
+
+        <div class="col m-auto  ">
+
+            <div class="imgholder bg-light overflow-hidden position-relative">
+
+                <img src="./indexImgs/MC-F-DG-SB-2_preview_rev_1.png" alt="" srcset="" class="img-fluid  ">
+<p class="fw-lighter position-absolute bg-white rounded-end ps-2 bestSeller">New In</p>
+            </div>
+            <div>
+                <b>mahabis curve</b>
+                <p>lavirk ligth grey & sakura pink</p>
+            </div>
+
+        </div>
+        <div class="col m-auto">
+
+            <div class="imgholder bg-light overflow-hidden">
+
+
+                <img src="./indexImgs/blackGreyshoe.png" alt="" srcset="">
+
+            </div>
+            <div>
+                <b> mahabis classic</b>
+                <p class="fw-lighter">Larvik dark grey & Skien black</p>
+                <p> ₦‌39,600</p>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="col m-auto">
+
+            <div class="imgholder bg-light">
+
+
+                <img src="./indexImgs/greyYellow.png" alt="" srcset="">
+            </div>
+            <div>
+                <b> mahabis classic</b>
+                <p class="fw-lighter">Larvik dark grey & Skien black</p>
+                <p> ₦‌39,600</p>
+            </div>
+
+
+        </div>
+    </div>
+
     <div class="container-fluid text-center mt-5">
         <b class="fs-1">we value good design.</b> <br>
         <p class="fs-3 fw-light">but it's what's on the inside that matters.</p>
 
     </div>
-    <div class="d-inline-block">
-        <img src="./indexImgs/side-to-side-2.jpg" alt="" class="img-fluid position-absolute ontopImg" id="ontopImg">
+    <div class="d-inline-block imgSlide">
+        <img src="./indexImgs/side-to-side-2.jpg" alt="" class="img-fluid position-absolute part1" id="part1">
  <div class="rounded-circle bg-light text-dark shadow divider"> <span> <i class="fa fa-arrow-left" aria-hidden="true"></i> </span> <span><i class="fa fa-arrow-right" aria-hidden="true" s></i></span></div>
         
-            <img src="./indexImgs/side-to-side-1.jpg" alt="" class="img-fluid position-relative belowImg" id="belowImg">
+            <img src="./indexImgs/side-to-side-1.jpg" alt="" class="img-fluid position-relative belowImg" id="part2">
         
     </div>
 
@@ -770,18 +904,22 @@
             </a>
         </div>
     </div>
-    <div class="container-fluid bg-light mt-2 text-center p-5">
-        <div>
-            <img src="./indexImgs/logo-independent.png" alt="" id="navTestimonial1">
-            <img src="./indexImgs/gq.webp" alt="" id="navTestimonial2">
-            <img src="./indexImgs/theTimes.avif" alt="" id="navTestimonial3">
+
+    <div class="container-fluid bg-light mt-2 text-center p-5 ">
+        <div class="border-bottom">
+            <img src="./indexImgs/logo-independent.png" alt="" class="testimonialActive" id="navTestimonial1">
+            <img src="./indexImgs/gq.webp" alt="" id="navTestimonial2" class=" p-4">
+            <img src="./indexImgs/theTimes.avif" alt="" class="p-2" id="navTestimonial3">
         </div>
-        <p class="fs-3 fw-bold" style="font-family: GT Haptik,Raleway,sans-serif;" id="testimonial1">
+        <div id="testimonial1">
+        <p class="fs-3 fw-bold" style="font-family: GT Haptik,Raleway,sans-serif;" >
 
             "mahabis, an award-winning brand, has considered <br> what it takes to create the most wearable slipper"
 
         </p>
-        <p class="fs-3 fw-bold" style="font-family: GT Haptik,Raleway,sans-serif;" id="testimonial2">
+    </div>
+    <div class="" id="testimonial2">
+        <p class="fs-3 fw-bold" style="font-family: GT Haptik,Raleway,sans-serif;" >
 
 
             "mahabis classic slipper gains top points for its well-considered construction... literal layers of pure
@@ -789,13 +927,17 @@
 
 
         </p>
-        <p class="fs-3 fw-bold" style="font-family: GT Haptik,Raleway,sans-serif;" id="testimonial3">
+    </div>
+
+    <div class="" id="testimonial3">
+        <p class="fs-3 fw-bold" style="font-family: GT Haptik,Raleway,sans-serif;">
 
 
             "this days the brand to show of is mahabis.the hip slipper <br> of choice"
 
 
         </p>
+    </div>
     </div>
 
 
@@ -828,6 +970,9 @@
             </a>
         </div>
     </div>
+
+    
+
 
     <footer class="w-100 py-4 flex-shrink-0 mt-5">
         <div class="container py-2 m-auto  ">
@@ -942,6 +1087,12 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
         </script>
     <script src="JS/jquery-3.6.1.min.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
     <script src="JS/main.js"></script>
 </body>
 

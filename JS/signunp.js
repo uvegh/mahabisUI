@@ -1,9 +1,4 @@
-
- 
-
-
-
-  $("#menNav").click(function () {
+$("#menNav").click(function () {
     $("#dropdownNavMen").slideToggle(500);
     $("#dropdownNavWomen").hide();
     $("#dropdownNavAbout").hide();
@@ -33,33 +28,3 @@ $("#helpNav").click(function () {
     
     
 })
-
- 
- 
- 
-     
- 
-   
-  let viewVid=  $(".viewVid");
- $(".playVid").click(function () {
-    play()
-    $(".playVid").hide()
-    $(".ontopImg").hide()
-    
-});
-var play =()=>{
-   viewVid.trigger('play');
-    
-    
-        }
-        $(".sizes").click(function () { 
-         $(this).css({p,
-            "border-color": "black",
-           " border-width": "2px",
-         },500)
-            
-        });
-
-
-        
-      
