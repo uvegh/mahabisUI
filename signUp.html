@@ -593,19 +593,28 @@
 
     <div class="banner ">
         <div class="container-fluid mt-5 pt-5 signUp m-auto ">
-           <form action="" class="m-auto border rounded p-5 mt-5 " method="post">
+           <form action="" class="m-auto border rounded p-5 mt-5  " method="post">
 
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <input type="text" class="form-control" id="nameTxt" placeholder="Username" required>
+                <label for="floatingInput">Username</label>
+              </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="emailTxt" placeholder="name@example.com" required>
                 <label for="floatingInput">Email address</label>
               </div>
               <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <input type="password" class="form-control" id="passwordTxt" placeholder="Password" required>
                 <label for="floatingPassword">Password</label>
                 
               </div>
+              
+            <div class="form-floating mb-3">
+                <input type="tel" class="form-control" id="phoneTxt" placeholder="name@example.com" required>
+                <label for="floatingInput">Phone</label>
+              </div>
               <div class="text-center">
-              <button type="submit" class="fs-5 text-white  m-auto rounded mt-2 ">Sign Up
+              <button type="button" class="fs-5 text-white  m-auto rounded mt-2 " id="btnSave">Sign Up
               </button> </div>
             </form>
         </div>
@@ -635,7 +644,7 @@
                             </p>
                         </li>
                         <li class="text-white fs-5">
-                            <form class="container-fluid p-2"> <input class="rounded-start p-3 pe-5" type="text"
+                            <form action="http://159.65.21.42:9000/register" method="get" class="container-fluid p-2"> <input class="rounded-start p-3 pe-5 text-white" type="text"
                                     placeholder="Enter email address"><a href=""
                                     class=" rounded-end bg-white text-dark ">SIGN UP</a> </form>
                         </li>

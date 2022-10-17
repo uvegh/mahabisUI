@@ -131,6 +131,11 @@ $("#seasonalPickTag").click(function () {
  
  
 
-
+ let showCartItems=[]
+ let getCartItems = localStorage.getItem("cartStorage")
+ if (getCartItems!=null) {
+     showCartItems= JSON.parse(getCartItems)
+     $("#cartItemNo").html(showCartItems.length)
+ }
 
  

@@ -365,4 +365,8 @@ video {
 }
 .modernLivingMen a:hover {
   text-decoration: underline;
+}
+
+.removeItem:focus, .removeItem :hover {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

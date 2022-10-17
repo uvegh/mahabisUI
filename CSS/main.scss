@@ -295,3 +295,7 @@ font-size: 12px; color: rgb(131, 129, 129);
         &:hover{
             text-decoration: underline;
         }}}
+
+        .removeItem{&:focus,:hover{
+            cursor: pointer;
+        }}
